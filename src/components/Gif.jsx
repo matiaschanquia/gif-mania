@@ -11,7 +11,7 @@ export default function Gif(props) {
     return (
         <div className={style.containerGif}>
             <NavLink to={`/gif/${props.id}`}>
-                <h3 className={style.title}>{ props.title }</h3>
+                <h3 className={style.title}>{ props.title.length > 0 ? props.title : "Gif sin título"}</h3>
             </NavLink>
             <img onLoad={loadHandler} className={loading ? style.isLoading : ""}  src={ props.images.fixed_height.url } alt={ props.title } />
             {
