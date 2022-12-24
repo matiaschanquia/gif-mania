@@ -1,0 +1,22 @@
+.containerGifs {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 40px 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.sinBusqueda {
+    font-size: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: fit-content;
+    margin: 0 auto;
+    background-color: #fff;
+    color: midnightblue;
+    padding: 8px 12px;
+    border-radius: 20px;
+}

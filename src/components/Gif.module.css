@@ -1,0 +1,47 @@
+.containerGif {
+    width: 90%;
+    max-width: 300px;
+    background-color: whitesmoke;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 2px solid midnightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    color: #000;
+}
+
+.containerGif > img {
+    width: 100%;
+    display: block;
+}
+
+img.isLoading {
+    display: none;
+}
+
+img.loadingImg {
+    display: block;
+    width: 30%;
+    animation: normal infinite girar 5s;
+    animation-timing-function: linear;
+}
+
+.loadingImg > img::selection {
+    background-color: transparent;
+}
+
+@keyframes girar {
+    to {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(-360deg);
+    }
+}
