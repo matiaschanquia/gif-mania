@@ -5,6 +5,7 @@ import style from "./App.module.css";
 import Footer from "./components/Footer";
 import { Navigate, Route, Routes } from "react-router-dom";
 import About from "./components/About";
+import Detail from "./components/Detail";
 
 function App() {
   const [gifs, setGifs] = useState([]);
@@ -25,11 +26,12 @@ function App() {
   }
 
   return (
-    <div>
+    <div className={style.containerApp}>
       <Navbar clickHandlerAdd={clickHandlerAdd} />
       <Routes>
         <Route path="/home" element={<Gifs gifs={gifs} />}/>
         <Route path="/about" element={<About />}/>
+        <Route path="/gif/:id" element={<Detail />} />
         <Route path="/" element={ <Navigate to="/home" replace/> }/>
       </Routes>
       {

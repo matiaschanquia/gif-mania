@@ -1,0 +1,61 @@
+.containerDetail {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.containerGif {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.btnBack {
+    display: block;
+    margin-bottom: 10px;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 1px solid midnightblue;
+    cursor: pointer;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.containerGif > button:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+}
+
+.containerGif > img {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: block;
+}
+
+.isLoading {
+    display: none;
+}
+
+.loading {
+    width: 90%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.loading > img {
+    width: 100%;
+    animation: normal infinite girar 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes girar {
+    to {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(-360deg);
+    }
+}

@@ -6,10 +6,16 @@
     flex-direction: column;
     gap: 10px;
     color: #FFF;
+    bottom: 0;
+    width: 100%;
 }
 
-.footer a {
+.linkGiphy {
     color: #fff;
+}
+
+.linkGiphy:hover {
+    color: gray;
 }
 
 .redes {

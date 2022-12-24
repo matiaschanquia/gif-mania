@@ -9,7 +9,7 @@ export default function Footer(props) {
                 <a href="https://github.com/matiaschanquia" target="_blank" rel="noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="logo github"/></a>
             </div>
             <p>&copy; Copyright Gif Mania API - Matias Chanquia Dev</p>
-            <p>Powered by <a href="https://giphy.com/" target="_blank" rel="noreferrer">GIPHY</a></p>
+            <p>Powered by <a className={style.linkGiphy} href="https://giphy.com/" target="_blank" rel="noreferrer">GIPHY</a></p>
         </footer>
     )
 }

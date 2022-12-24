@@ -6,9 +6,6 @@
     border-radius: 20px;
     border: 2px solid black;
     padding: 20px 30px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
 }
 
 .header > h1 {
