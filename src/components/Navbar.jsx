@@ -12,7 +12,7 @@ export default function Navbar(props) {
 
     return(
         <header className={style.header}>
-            <h1>Gif Mania</h1>
+            <h1>Gif Manía</h1>
             <div>
                 <nav className={style.nav}>
                     <ul>
