@@ -28,8 +28,8 @@ export default function Navbar(props) {
                         </li>
                     </ul>
                 </nav>
-                <form className={style.form} onSubmit={(e) => props.clickHandlerAdd(nameGif, e)}>
-                    <input type="text" placeholder="Ingrese un texto" onChange={changeHandler}/>
+                <form className={style.form} onSubmit={(e) => {props.clickHandlerAdd(nameGif, e); setNameGif("")}}>
+                    <input type="text" placeholder="Ingrese un texto" onChange={changeHandler} value={nameGif}/>
                     <button type="submit">Buscar</button>
                 </form>
             </div>
